@@ -1,11 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello World</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cool Landing Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #1e3c72, #2a5298);
+            color: white;
+            line-height: 1.6;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .btn {
+            background-color: #ff6f61;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            border-radius: 25px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #ff4b3a;
+        }
+
+        .features {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 4rem;
+        }
+
+        .feature-box {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 20px;
+            width: 30%;
+            transition: transform 0.3s ease;
+        }
+
+        .feature-box:hover {
+            transform: scale(1.05);
+        }
+
+        .feature-box h3 {
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .feature-box p {
+            font-size: 1rem;
+        }
+
+        @media(max-width: 768px) {
+            .features {
+                flex-direction: column;
+            }
+
+            .feature-box {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Hello, World! New tech development Update on Tech</h1>
+    <div class="container">
+        <h1>Welcome to Your Cool Landing Page</h1>
+        <p>This is a simple, sleek, and modern landing page that you can customize for your website.</p>
+        <button class="btn">Get Started</button>
+
+        <div class="features">
+            <div class="feature-box">
+                <h3>Fast & Responsive</h3>
+                <p>Our website is optimized for speed and looks great on any device.</p>
+            </div>
+            <div class="feature-box">
+                <h3>Easy to Customize</h3>
+                <p>Change colors, layouts, and content easily with just a few clicks.</p>
+            </div>
+            <div class="feature-box">
+                <h3>Secure & Reliable</h3>
+                <p>We prioritize your security and ensure the reliability of our platform.</p>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
